@@ -17,7 +17,7 @@
       height: 100%;
     }
   </style>
-  <troli class="js"></troli>
+  <script src="troli.js"></script>
 </head>
 
 <body>
@@ -87,7 +87,8 @@
         <h1 class="display-2">Trolibusz</h1>
         <p id="def">A trolibusz olyan közúti tömegközlekedési elektromos hajtású, gumikerekes jármű, amelyet áramszedők
           kapcsolnak a felsővezetékhez, amiből a mozgáshoz szükséges energiát kapja. Funkciója általában a közforgalmú
-          autóbuszéhoz hasonló. A trolibusz közúti jármű; a <a href="http://net.jogtar.hu/kresz" target="_blank" rel="noopener noreferrer">KRESZ</a> definíciója szerint „elektromos felsővezetékhez kötött
+          autóbuszéhoz hasonló. A trolibusz közúti jármű; a <a href="http://net.jogtar.hu/kresz" target="_blank"
+            rel="noopener noreferrer">KRESZ</a> definíciója szerint „elektromos felsővezetékhez kötött
           gépkocsi”.</p>
       </div>
     </div>
@@ -118,31 +119,11 @@
         <h2 class="display-4">Felépítés</h2>
         <p>1980-ban gyártásba került csehszlovák Škoda 14Tr trolibusz rajza, vastag betűvel kiemelve a
           trolibusz-specifikus elemek.</p>
-        <ul>
-          <li>Felsővezeték</li>
-          <li>Viszonylatjelző tábla</li>
-          <li>Visszapillantó tükör</li>
-          <li>Fényszóró</li>
-          <li>Első ajtó</li>
-          <li>Hajtott hátsó tengely</li>
-          <li>Második és harmadik ajtó</li>
-          <li>Kormányozható első tengely</li>
-          <li>Díszléc</li>
-          <li>Kötéldob</li>
-          <li>Lehúzó kötél</li>
-          <li>Áramszedő csúszófej</li>
-          <li>Áramszedő</li>
-          <li>Rögzítőlíra</li>
-          <li>Elektromos berendezés a tetőn</li>
-          <li>Pályaszám</li>
-        </ul>
         <img src="jarmu.png" class="img-thumbnail" alt="Trolibusz felépítése" title="Trolibusz felépítése" />
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4" id="felepites">
+      <div class="col-lg-4" id="magyarazat">
 
-        <ul>
+        <ol>
           <li>Felsővezeték</li>
           <li>Viszonylatjelző tábla</li>
           <li>Visszapillantó tükör</li>
@@ -159,7 +140,11 @@
           <li>Rögzítőlíra</li>
           <li>Elektromos berendezés a tetőn</li>
           <li>Pályaszám</li>
-        </ul>
+        </ol>
+      </div>
+    </div>
+
+
 
     <div class="row">
       <div class="col-lg-6" id="felsovezetes">
@@ -187,7 +172,7 @@
           betétjáratból áll, amit a Budapesti Közlekedési Központ megrendelésére a Budapesti Közlekedési Zrt. üzemeltet.
           A hálózat hossaz 75,5km, a vonalak száma 16, összesen 172 megállóval.</p>
         <p>Az alábbi űrlapon megnézheti a kétszámjegyű járatszámok viszonylatait:</p>
-        <form method="post" id="jaratviszonylatok"> 
+        <form method="post" id="jaratviszonylatok">
           <p>Járatszám:
             <br>
             <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">
