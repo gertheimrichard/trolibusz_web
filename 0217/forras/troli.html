@@ -114,7 +114,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12" id="felepites">
+      <div class="col-lg-8" id="felepites">
         <h2 class="display-4">Felépítés</h2>
         <p>1980-ban gyártásba került csehszlovák Škoda 14Tr trolibusz rajza, vastag betűvel kiemelve a
           trolibusz-specifikus elemek.</p>
@@ -139,6 +139,28 @@
         <img src="jarmu.png" class="img-thumbnail" alt="Trolibusz felépítése" title="Trolibusz felépítése" />
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-4" id="felepites">
+
+        <ul>
+          <li>Felsővezeték</li>
+          <li>Viszonylatjelző tábla</li>
+          <li>Visszapillantó tükör</li>
+          <li>Fényszóró</li>
+          <li>Első ajtó</li>
+          <li>Hajtott hátsó tengely</li>
+          <li>Második és harmadik ajtó</li>
+          <li>Kormányozható első tengely</li>
+          <li>Díszléc</li>
+          <li>Kötéldob</li>
+          <li>Lehúzó kötél</li>
+          <li>Áramszedő csúszófej</li>
+          <li>Áramszedő</li>
+          <li>Rögzítőlíra</li>
+          <li>Elektromos berendezés a tetőn</li>
+          <li>Pályaszám</li>
+        </ul>
+
     <div class="row">
       <div class="col-lg-6" id="felsovezetes">
         <h2 class="display-4">Felsővezetés</h2>
@@ -165,10 +187,10 @@
           betétjáratból áll, amit a Budapesti Közlekedési Központ megrendelésére a Budapesti Közlekedési Zrt. üzemeltet.
           A hálózat hossaz 75,5km, a vonalak száma 16, összesen 172 megállóval.</p>
         <p>Az alábbi űrlapon megnézheti a kétszámjegyű járatszámok viszonylatait:</p>
-        <form method="post">
+        <form method="post" id="jaratviszonylatok"> 
           <p>Járatszám:
             <br>
-            <select onclick="vegallomasKiiras(this.value)">
+            <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">
               <script>
                 vegallomasNevek.forEach(jaratKiiras);
               </script>
